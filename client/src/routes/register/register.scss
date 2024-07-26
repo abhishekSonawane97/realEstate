@@ -1,0 +1,116 @@
+@import "../../responsive.scss";
+
+
+@import '../../responsive.scss';
+
+.register{
+    display: flex;
+    height: 100%;
+
+    .formContainer{
+        flex: 3;
+
+        .wrapper{
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+             height: 100%;
+
+             @include md{
+                padding: 0;
+             }
+
+             @include md{
+                justify-content: flex-start;
+             }
+
+             form{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 5px;
+                width: max-content;
+        
+                @include sm{
+                    border: none;
+                }
+                input{
+                    padding: 10px 15px;
+                    width: 330px;
+                    border-radius: 5px;
+                    margin: 4px 0;
+        
+                    @include lg{
+                        padding: 10px;
+                    }
+        
+                    @include md{
+                        width: 250px;
+                    }
+        
+                    @include sm{
+                        width: auto;
+                        padding: 15px;
+                    }
+                }
+        
+                button{
+                    cursor: pointer;
+                    padding: 10px 15px;
+                    background-color: #fece51;
+                    border: none;
+                    width: 330px;
+                    color: #fcf5f3;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    margin-bottom: 4px;
+        
+                    @include lg{
+                        padding: 10px;
+                    }
+        
+                    @include md{
+                        width: 250px;
+                    }
+        
+                    @include sm{
+                        width: auto;
+                        padding: 15px;
+                    }
+                }
+                a{
+                    text-decoration: underline;
+                    font-size: 12px;
+                    // text-align: left;
+                }
+            }
+        }
+    }
+    .imgContainer{
+        flex: 2;
+        background-color: #fcf5f3;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @include md{
+            display: none;
+        }
+
+        img{
+            width: 115%;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            object-fit: contain;
+
+            @include lg{
+                width: 105%;
+            }
+        }
+    }
+}
