@@ -8,11 +8,7 @@ import { MdOutlineBedroomParent } from "react-icons/md";
 import { MdOutlineBathtub } from "react-icons/md";
 
 
-
-
-
 export default function Card({item}) {
-
   // console.log('item : ', item );
   return (
     <div className='card'>
